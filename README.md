@@ -1,2 +1,15 @@
 # lab001-laravel
-Experiência em um projeto com Laravel
+
+O objetivo é adicionar uma página intermediária para controlar o carregamento da página subsequente
+
+## Diagrama de sequência
+
+```
+[Navegador]                           [Middleware]                          [Server]
+
+ |          acessaPaginaDemorada() ->       |
+ |          <- paginaDeEspera()             |
+                                            | carregaPaginaDemorada() ->        |
+                                            | <- resultadoPaginaDemorada()      |
+ |    <- redirecionaPaginaResultado()       |
+```
