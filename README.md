@@ -13,3 +13,7 @@ O objetivo é adicionar uma página intermediária para controlar o carregamento
                                             | <- resultadoPaginaDemorada()      |
  |    <- redirecionaPaginaResultado()       |
 ```
+
+## Issues
+
+- e se houver falha no processamento no `[Server]`?;
